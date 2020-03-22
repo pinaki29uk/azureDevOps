@@ -6,13 +6,6 @@ trigger:
 - master
 
 resources:
-- task: DockerCompose@0
-  inputs:
-    containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Pay-As-You-Go(bd8591d7-aec0-408e-be96-b84dd5a8328b)'
-    azureContainerRegistry: '{"loginServer":"pmtestregistry.azurecr.io", "id" : "/subscriptions/bd8591d7-aec0-408e-be96-b84dd5a8328b/resourceGroups/pmmytestresourcegrp/providers/Microsoft.ContainerRegistry/registries/pmtestregistry"}'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'Run a Docker Compose command'
 - repo: self
 
 variables:
