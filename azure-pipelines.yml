@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '60b671ee-1cda-4657-b342-7627ef4869cd'
   imageRepository: 'pinakiukazuredevops'
-  containerRegistry: 'pinakiukazuredevops.azurecr.io'
+  containerRegistry: 'pmtestregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   
