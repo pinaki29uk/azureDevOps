@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "pmtestakscluster-a82b"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "pmtestakscluster-a82b"
+    spec:
+      containers:
+        - name: "pmtestakscluster-a82b"
+          image: "pmmyregistry.azurecr.io/pmtestakscluster"
+          ports:
+          - containerPort: 80
